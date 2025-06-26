@@ -1,0 +1,26 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; }
+h1 { text-align: center; margin-bottom: 20px; }
+
+/* Auth und Manager */
+.auth-container, .manager-container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.tabs { display: flex; margin-bottom: 15px; }
+.tab { flex: 1; text-align: center; padding: 10px; cursor: pointer; border-bottom: 2px solid transparent; }
+.tab.active { border-bottom-color: #007BFF; font-weight: bold; }
+.logout-btn { float: right; background: transparent; border: none; color: #007BFF; cursor: pointer; font-size: 1em; margin-bottom: 10px; }
+
+/* Formular */
+.form-container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+form { display: none; }
+form.active { display: block; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+button { background-color: #007BFF; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+
+/* Dashboard Entries */
+.entries { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.entry-card { background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: relative; }
+.entry-card h3 { margin-top: 0; font-size: 1.1em; }
+.entry-card p { margin: 5px 0; word-break: break-all; }
+.delete-btn { position: absolute; top: 10px; right: 10px; background: transparent; border: none; font-size: 1.2em; color: #888; cursor: pointer; }
+.delete-btn:hover { color: #f00; }
